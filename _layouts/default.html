@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; chartset=utf-8" />
-	<title>{{ page.title }}</title>
-</head>
-<body align="center">
-	{{content}}
+<html lang="en">
+{% include head.html %}
+<body>
+
+  <div class="wrapper">
+    {{ content }}
+  </div>
+  
+  {% include analytics.html %}
 </body>
 </html>
